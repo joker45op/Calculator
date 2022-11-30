@@ -1,19 +1,19 @@
 .c-btn {
-    border-radius: 12px;
-    /*border: 1px solid black;*/
-    background-color: var(--bg-color);
-    border:none;
-    padding: 5px 5px;
-    width: 50px;
-    height:50px;
-    font-size: 24px;
-    font-weight:500 ;
-    box-shadow: -2px -2px 9px var(--sec-bg-color),3px 3px 5px 1px var(--shadow-color);
-    color: var(--font-color);
-  } 
+  border-radius: 12px;
+  /*border: 1px solid black;*/
+  background-color: var(--bg-color);
+  border: none;
+  padding: 5px 5px;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  font-weight: 500;
+  box-shadow: -2px -2px 9px var(--sec-bg-color), 3px 3px 5px 1px var(--shadow-color);
+  color: var(--font-color);
+}
 
 
-svg{
+svg {
   position: relative;
   height: 35px;
   width: 35px;
@@ -21,10 +21,10 @@ svg{
   padding: 3px;
 }
 
-path{
+path {
   width: 20px;
   height: 20px;
-  margin:auto;
+  margin: auto;
   position: absolute;
   top: 50%;
   /* transform: translateY(-50%); */
