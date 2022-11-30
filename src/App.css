@@ -1,0 +1,142 @@
+:root {
+  --font-color: black;
+  --sec-font-color: #00b0ff;
+  --bg-color: white;
+  --shadow-color: #5097b87a;
+  --sec-bg-color:transparent;
+}
+
+html[data = "dark-theme"]{
+  --font-color: rgb(255, 255, 255);
+  --sec-font-color: #00b0ff;
+  --bg-color: #313346;
+  --shadow-color: #1b1c1e;
+  --sec-bg-color:#6d6c6c77;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  /*height: 100%;*/
+  box-sizing: border-box;
+}
+
+body,#root,.App{
+  min-height: -webkit-fill-available;
+  height:100vh;
+  background-color: var(--bg-color);
+  color:var(--font-color);
+}
+
+.App{
+  display: flex;
+  align-items: center;
+}
+
+html {
+  height: -webkit-fill-available;
+}
+
+.App{
+  height: 100%;
+  overflow:hidden;
+}
+
+.App-calc{
+  border-radius: 1rem;
+  height:520px;
+  width:330px;
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow:-1px -1px 50px var(--shadow-color),3px 3px 6px var(--shadow-color);
+  margin: 10px auto;
+}
+
+.App-text{
+  height:10rem;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  justify-content: flex-end;
+  border-bottom: 1px solid var(--shadow-color);
+  margin:0 1rem;
+  position:relative;
+  overflow: hidden;
+}
+
+.App-text-hist{
+  overflow-y: scroll;
+  height: 3rem;
+  padding-top:1rem;
+  margin-bottom: .3rem;
+  position: relative;
+  overflow-x:hidden;
+  z-index: 1;
+  opacity: .6;
+  /*box-shadow: 0px 1px 1px black inset;*/
+}
+.App-text-hist::-webkit-scrollbar{
+  width: 0px;
+}
+
+.App-text-curr{
+}
+
+.App-text-str, .App-text-str-false, .App-text-str-inact {
+  font-size: 2.8rem;
+  opacity: 1;
+}
+.App-text-str::-webkit-scrollbar{
+  width: 0px;
+}
+.App-text-str-true{
+  font-size:2rem;
+}
+.App-text-str-act{
+  opacity: 0.7;
+  font-size: 1.5rem;
+}
+
+.App-text-ans, .App-text-ans-inact,.App-text-ans-true{
+  height: 0rem;
+  margin-bottom: .1rem;
+  visibility: hidden;
+  font-size: 1.7rem;
+  opacity: 1;
+  color: var(--sec-font-color);
+}
+.App-text-ans::-webkit-scrollbar{
+  width: 0px;
+}
+.App-text-ans-true{
+  font-size: 1.7rem;
+  height:2.5rem;
+  min-height:2.5rem ;
+  visibility: visible;
+  margin-bottom: .2rem;
+}
+.App-text-ans-act{
+  font-size: 2.2rem;
+  visibility: visible;
+  height:2.5rem;
+  min-height:2.5rem ;
+  margin-bottom: .5rem;
+  font-weight: 600;
+}
+
+.App-btns{
+  display: flex;
+  flex-direction: column;
+  /*border:1px solid red;*/
+  height:24.6rem;
+  align-content: space-around;
+  justify-content: space-evenly;
+}
+
+.App-btn-r{
+  display: flex;
+  align-content: space-around;
+  justify-content: space-evenly;
+}
